@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat | ChatApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="chat__sidebar">
+            <h3 class="title">Users</h3>
+            <div id="users">
+                <ul>
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                    <li>item4</li>
+                    <li>item5</li>
+                    <li>item6</li>
+                    <li>item7</li>
+                    <li>item8</li>
+                    <li>item9</li>
+                    <li>item10</li>
+                    <li>item11</li>
+                    <li>item12</li>
+                    <li>item13</li>
+                    <li>item14</li>
+                    <li>item15</li>
+                    <li>item16</li>
+                    <li>item17</li>
+                    <li>item18</li>
+                    <li>item19</li>
+                    <li>item20</li>
+                    <li>item21</li>
+                    <li>item22</li>
+                    <li>item23</li>
+                    <li>item24</li>
+                    <li>item25</li>
+                    <li>item26</li>
+                    <li>item27</li>
+                    <li>item28</li>
+                    <li>item29</li>
+                    <li>item30</li>
+                    <li>item31</li>
+                    <li>item32</li>
+                    <li>item33</li>
+                    <li>item34</li>
+                    <li>item35</li>
+                    <li>item36</li>
+                    <li>item37</li>
+                    <li>item38</li>
+                    <li>item39</li>
+                    <li>item40</li>
+                    <li>item41</li>
+                    <li>item42</li>
+                    <li>item43</li>
+                    <li>item44</li>
+                    <li>item45</li>
+                    <li>item46</li>
+                    <li>item47</li>
+                    <li>item48</li>
+                    <li>item49</li>
+                    <li>item50</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chat__main">
+
+            <div id="messages" class="chat__messages"></div>                
+    
+            <form id="message-form" class="chat__form">
+                <div class="field">
+                    <label for="message" class="label">Mensagem</label>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <input class="input" type="text" name="message" placeholder="Message"><br>
+                    </div>
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Enviar</button>
+                    </div>
+                    <div class="control">
+                        <button type="button" class="button" id="send-location">Enviar Localização</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+         
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <script src="/js/deparam.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>
