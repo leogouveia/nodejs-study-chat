@@ -18,9 +18,17 @@ class Users {
     }
 
     remove(id) {
-        let ix = this.indexOfId(id)
-        if(ix) 
-            return _.pullAt(this._users, this.indexOfId(ix))
+        console.log('Remove method')
+        console.log(`Id: ${id}`)
+        let user =  Object.assign({}, this.get(id))
+        if(user) {
+            /** Needs to copy the object not the reference that will be excluded */
+            
+            console.log(user)
+            _.remove(this._users, (n) => n.id === id )
+            return user
+        }
+            
         else
             return false
     }
